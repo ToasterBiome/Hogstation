@@ -163,7 +163,7 @@
 	
 	var/backup_hash = rustg_hash_string(RUSTG_HASH_SHA512, raw_backup)
 
-	var/mfa_uri = "otpauth://totp/[ckey]?secret=[code_b32]&issuer=Yogstation13"
+	var/mfa_uri = "otpauth://totp/[ckey]?secret=[code_b32]&issuer=Hogstation"
 
 	var/qr_image = "<img src=\"https://api.qrserver.com/v1/create-qr-code/?data=[url_encode(mfa_uri)]&size=200x200\" />"
 
