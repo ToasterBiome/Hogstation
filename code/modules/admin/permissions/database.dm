@@ -165,7 +165,7 @@
 			current_flags = dbranks[dbadmins[ckey]]
 		dbranks[new_rank] = current_flags
 		var/datum/DBQuery/query_add_rank = SSdbcore.NewQuery({"
-			INSERT INTO [format_table_name("admin_ranks")] (`rank`, flags, exclude_flags, can_edit_flags)
+			INSERT INTO [format_table_name("admin_ranks")] (rank, flags, exclude_flags, can_edit_flags)
 			VALUES (:new_rank, :flags, '0', :edit_flags) ON DUPLICATE KEY UPDATE
 		"}, list("new_rank" = new_rank, "flags" = current_flags["flags"], "edit_flags" = current_flags["can_edit_flags"]))
 		if(!query_add_rank.warn_execute())
