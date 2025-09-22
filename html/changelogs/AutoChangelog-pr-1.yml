@@ -1,6 +1,0 @@
-author: "DiogenesOfMiami, Oblisk234"
-delete-after: true 
-changes: 
-  - tweak: "admin_ranks.txt has been redone."
-  - tweak: "Changelog and the MOTD has been redone."
-  - rscdel: "The Link Forum Account verb has been commented out."
